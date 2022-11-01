@@ -44,6 +44,6 @@ return lista_ordenada
 
 nave1 = ('Halcon milenario', 800,3,6)
 nave2 = ( 'Estrella de la muerte ')
-nave3 =
+nave3 =k 
 nave4 =
 nave5 =
