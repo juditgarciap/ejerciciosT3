@@ -12,8 +12,24 @@ class Nave():
 def ordenar(lista_naves):
 #ordenar por letras
     lista_ordenada = sorted(lista_naves, key= lambda x: x.nombre)
+    lista_nombres = [nave.nombre for nave in lista_ordenada]
 #ordenar por largo
     letras_iniciales = [nave.nombre[0] for nave in lista_ordenada]
+
+#esta no es la manera más eficiente de hacerlo pero no se me ocurría otra forma
+for letra in set(letras_iniciales):
+    posiciones = []
+    for pos, nombre_nave in enumerate (lista_nombres):
+        if nombre_nave
+
+
+
+    print 
+
+
+
+return lista_ordenada
+
 
 
 
