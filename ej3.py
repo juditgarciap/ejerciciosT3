@@ -9,8 +9,12 @@ class Nave():
         print(f 'Nombre: {self.nombre} - Largo: {self.largo}')
         print(f 'tripulacion: {self.tripulacion} - cantidad pasajeros: {self.cantidad_pasajeros}') 
         
-def ordenar(lista_naves)
+def ordenar(lista_naves):
 #ordenar por letras
+    lista_ordenada = sorted(lista_naves, key= lambda x: x.nombre)
+#ordenar por largo
+    letras_iniciales = [nave.nombre[0] for nave in lista_ordenada]
+
 
 
 
