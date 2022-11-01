@@ -20,11 +20,12 @@ def ordenar(lista_naves):
 for letra in set(letras_iniciales):
     posiciones = []
     for pos, nombre_nave in enumerate (lista_nombres):
-        if nombre_nave
-
-
-
-    print 
+        if nombre_nave [0] == letra:
+            posiciones.append(pos)
+    if len (posiciones) > 1:
+        
+    
+        print 
 
 
 
