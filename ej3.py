@@ -86,7 +86,16 @@ def mayor_pasajeros(naves):
 mayor_pasajeros(naves)
 
 #apartado4
+def buscar_at(naves):
+    flag = False
+    for nave in naves:
+        if nave.nombre.lower()[:2] == 'at':
+            flag = True
+            print(nave)
 
+    if flag == False:
+        print('No hay naves que inicien por at')
+buscar_at(naves)
 
 #Apartado5
 
