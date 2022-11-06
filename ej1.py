@@ -6,3 +6,8 @@
 # Se deben pasar los discos desde la primera aguja a la tercera aguja. 
 # Solo puede moverse un disco a la vez.
 # Ningún disco podrá ponerse encima de otro disco más pequeño.
+
+def TorreDeHanoi(nDisco, agujaFuente, agujaDestino, agujaAuxiliar):
+    
+    if nDisco == 0: 
+
