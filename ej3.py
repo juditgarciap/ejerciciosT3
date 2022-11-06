@@ -77,7 +77,21 @@ def ordenar(lista_naves):
 #mostrar por pantalla el nombre y el tamaño de la nave
 [(nave.nombre, nave.largo) for nave in ordenar(naves)]
 
-#
+#apartado3
+def mayor_pasajeros(naves):
+    naves_ordenadas = sorted(naves, key = lambda x: x.cantidad_pasajeros, reverse = True)
+    for i in range(5):
+        print(i+1, naves_ordenadas[i])
+
+mayor_pasajeros(naves)
+
+#apartado4
+
+
+#Apartado5
+
+
+#apartado6
     
 
 
