@@ -36,20 +36,22 @@ def ReglaSarrus(matrix, nivel=0, det=0):
         print("El determinante de la matrix es:", det)
         return None
         
-
-
-
-
-
+#Dezplazar columna de la matriz según Regla de Sarrus.
+    matrix = [ matrix[0][1:3] + [matrix[0][0]],
+               matrix[1][1:3] + [matrix[1][0]],
+               matrix[2][1:3] + [matrix[2][0]] ]
+    
+    print(matrix)    
+    ReglaSarrus(matrix, nivel+1, det)
 
 
 
 matrix = [[2, 4, 3],
           [1, 4, 6],
           [1, 6, 8]]
-ReglaDeSarrus(matrix)    
+ReglaSarrus(matrix)    
 matrix = [[3, -3, -6],
           [-9, 8, 1],
           [-3, -1, 2]]
-ReglaDeSarrus(matrix)  
+ReglaSarrus(matrix)  
 
