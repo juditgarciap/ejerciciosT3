@@ -6,8 +6,8 @@ class Nave():
         self.cantidad_pasajeros = cantidad_pasajeros
     def __str__ (self):
 #la f es lo mismpo que .format pero hay que pasarle las variables con el self
-        print(f 'Nombre: {self.nombre} - Largo: {self.largo}')
-        print(f 'tripulacion: {self.tripulacion} - cantidad pasajeros: {self.cantidad_pasajeros}') 
+        return f'Nombre: {self.nombre} - Largo: {self.largo}'
+        return f'tripulacion: {self.tripulacion} - cantidad pasajeros: {self.cantidad_pasajeros}')
         
 def ordenar(lista_naves):
 #ordenar por letras
@@ -23,7 +23,7 @@ for letra in set(letras_iniciales):
         if nombre_nave [0] == letra:
             posiciones.append(pos)
     if len (posiciones) > 1:
-        
+
     
         print 
 
@@ -41,10 +41,14 @@ return lista_ordenada
 
 
 
-#crear naves
 
-nave1 = ('Halcon milenario', 800,3,6)
-nave2 = ( 'Estrella de la muerte ')
-nave3 =k 
-nave4 =
-nave5 =
+
+#crear naves 
+
+nave1 = Nave('Halcón Milenario', 800, 3, 6)
+nave2 = Nave('Estrella de la Muerte', 750, 2, 5)
+nave3 = Nave('HalaX', 600, 1, 4)
+nave4 = Nave('Destructor Estelar', 10000, 4, 7)
+nave5 = Nave('Lanzadera Imperial', 11000, 2, 6)
+nave6 = Nave('Nave real nubian 327', 9000, 5, 20)
+nave7 = Nave('AT real X', 6000, 4, 2)
