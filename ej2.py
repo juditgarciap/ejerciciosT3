@@ -18,5 +18,10 @@ det_iterativa(matriz=[[1,2,3],
                       [1,0,1],
                       [2,2,1]])
 
-
+#forma recursiva 
+def ReglaSarrus(matrix, nivel=0, det=0):
+    print("Determinante acumulado:", 
+          det, 
+          " - Nivel de recursión:",
+          nivel)
 
