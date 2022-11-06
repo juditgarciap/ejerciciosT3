@@ -73,6 +73,11 @@ def ordenar(lista_naves):
     return lista_naves_copia
 
 
+# apartado2 
+#mostrar por pantalla el nombre y el tamaño de la nave
+[(nave.nombre, nave.largo) for nave in ordenar(naves)]
+
+#
     
 
 
