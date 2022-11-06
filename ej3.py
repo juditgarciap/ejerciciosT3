@@ -98,10 +98,34 @@ def buscar_at(naves):
 buscar_at(naves)
 
 #Apartado5
+def mayores_pasajeros(naves):
+    for nave in naves:
+        if nave.cantidad_pasajeros >= 6:
+            print(nave)
 
+mayores_pasajeros(naves)
 
 #apartado6
     
+def mayor_menor_largo(naves):
+    min_largo = 100000
+    max_largo = 0
+
+    for nave in naves:
+        # para buscar el mayor
+        if nave.largo > max_largo:
+            nave_mas_grande = nave
+            max_largo = nave.largo
+
+        # para buscar el menor
+        if nave.largo < min_largo:
+            nave_mas_pequenia = nave
+            min_largo = nave.largo
+    
+    print(f'Nave más grande: {nave_mas_grande}')
+    print(f'Nave más pequeña: {nave_mas_pequenia}')
+
+mayor_menor_largo(naves)
 
 
 
